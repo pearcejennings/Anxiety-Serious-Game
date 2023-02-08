@@ -45,4 +45,7 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.Rotate(Vector3.up * 80 * Time.deltaTime);
         }
     }
+
+
+
 }
