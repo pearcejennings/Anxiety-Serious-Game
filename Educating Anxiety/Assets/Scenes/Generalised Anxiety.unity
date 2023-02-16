@@ -2559,7 +2559,7 @@ GameObject:
   - component: {fileID: 50161189}
   - component: {fileID: 50161191}
   - component: {fileID: 50161190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20766,6 +20766,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3743597651360454368, guid: 5ef409a98ddcd6d499c1ae0b055f7c02, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 3743597651360454369, guid: 5ef409a98ddcd6d499c1ae0b055f7c02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.322
@@ -40513,7 +40517,7 @@ GameObject:
   - component: {fileID: 1002295215}
   - component: {fileID: 1002295217}
   - component: {fileID: 1002295216}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40982,6 +40986,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3743597651360454368, guid: 5ef409a98ddcd6d499c1ae0b055f7c02, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 3743597651360454369, guid: 5ef409a98ddcd6d499c1ae0b055f7c02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35
@@ -44439,7 +44447,7 @@ GameObject:
   - component: {fileID: 1110862394}
   - component: {fileID: 1110862395}
   - component: {fileID: 1110862396}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -59932,7 +59940,7 @@ GameObject:
   - component: {fileID: 1515368964}
   - component: {fileID: 1515368966}
   - component: {fileID: 1515368965}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ThirdPersonCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67004,7 +67012,7 @@ GameObject:
   - component: {fileID: 1679023792}
   - component: {fileID: 1679023791}
   - component: {fileID: 1679023793}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67946,7 +67954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1697614542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73983,7 +73991,7 @@ GameObject:
   - component: {fileID: 1859784769}
   - component: {fileID: 1859784771}
   - component: {fileID: 1859784772}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}

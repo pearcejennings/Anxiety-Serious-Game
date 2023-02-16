@@ -1,0 +1,3667 @@
+fileFormatVersion: 2
+guid: edc296bd4994b3245ae3b6d8e3c701fd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boxbreathingsprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfe7a1fdd4b6a245aa1b5b275d2ba21
+      internalID: 653386403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399aeffd6a19b6341b761865d482a395
+      internalID: 192896369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 8680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715527fb99b6b8f4c8d2f4de791932c6
+      internalID: -944806951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 8680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ef728137d85c445b2f78baa742bd36
+      internalID: -1879454753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 8680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea342a70a6e34794492ba9ef75b70018
+      internalID: -773330065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca50dfe604a3954faef08a1bbd5f40e
+      internalID: 2031585314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7fb9505b1ac4441850c8441bc50545
+      internalID: -806124002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 8400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01f562be5ec85846b7f583701621ee4
+      internalID: -775598967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 8400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b690bd0d5e6d641847c7f9d6539f46
+      internalID: -1928238151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 8400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e2d2d377ecb7c409f0fe8858fa1434
+      internalID: -1198942831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0456ddd93f72f554eb730106098e212b
+      internalID: -492780027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347413ae786c6ac4f8e69ff31aa0103c
+      internalID: 541184130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 8120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5ddafe11955574bae25dcb7ce1f0b4
+      internalID: -1078628693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_13
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 8120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dd0ccfaea4cbd41affe34776e98262
+      internalID: 1028999360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 8120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4c1adbb1b1c2248b3d2ed124e4b15a
+      internalID: -733018185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef6a52f34f90e245b7a421bb18479c7
+      internalID: -1026071595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 7840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa91f332064add46becff30e30919f0
+      internalID: 2132286847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_17
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 7840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fba7dbf81f597f419f73b13cbf5984e
+      internalID: 1039301637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_18
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 7840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b150c83a2323474ebfd82dd24e10487
+      internalID: 304135364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_19
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 7840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfa917d3b525a94bb4532ee57b439b0
+      internalID: 945149830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b89e66c770f1941a4c048aa6e0ea78
+      internalID: 1199027433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_21
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 7560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157300d8f34b78f478fabbac2b3b1a34
+      internalID: 710500011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_22
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 7560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3d94c06e7e2484db6168bb4f545daf
+      internalID: 1700453233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_23
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 7560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d44b13e9a71bd4199cbb44b9528744
+      internalID: -727720211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_24
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 7560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546e0bb801b8cce4080750f3dcbfc6f9
+      internalID: -1822867084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3fdfd58076b2849897a5b70adfc67e
+      internalID: -1654327201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_26
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 7280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37707fad86cd2a546bbde2e6ca1d7a9d
+      internalID: 1465629037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_27
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 7280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2cc52b773bc294a857dccd94d6b8ce
+      internalID: 432612886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 7280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f793d49a8f0084d8a65529dc713a56
+      internalID: 303105096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_29
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 7280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bed04590ae7c84d8a2989a7ca2ca03
+      internalID: -1918777152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7000
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f068efbfd4e01498280b8766e452bd
+      internalID: -1007550222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_31
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 7000
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c92e29bab7e814a988d7c9fafdea7e
+      internalID: -1043699190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 7000
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071f1319872082d49be332f4ad2bdea4
+      internalID: 1932759559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_33
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 7000
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911d6bd9c233384498ccc44413cfd914
+      internalID: -848930275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_34
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 7000
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303221f5189e3954da0ce7015a445deb
+      internalID: -909717694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6720
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e637625a207f2554ba77af34e7b53e58
+      internalID: -1637804131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_36
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 6720
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb2a70ea0bc9ae41ac3b4cd83f788c4
+      internalID: 1687710265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_37
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 6720
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f32ef2174e0404b83439f7419ddef3
+      internalID: 1793583711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_38
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 6720
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d898e356e8a0c03408b02c47cdbee947
+      internalID: 350726371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_39
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 6720
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c8f178db4dd9148bf0e13917af6a4f
+      internalID: -428762023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6440
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c97e3b48f9a8e147bcc15ea603588a9
+      internalID: 189253423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_41
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 6440
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e1221080d7a6e4aa3ce74e62e110c8
+      internalID: 1995166458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_42
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 6440
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d8b1a4c6136d74fba68d75637fd9ff
+      internalID: 1039730234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_43
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 6440
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2f22e2359793f46a6a628b8696c900
+      internalID: -1366456644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_44
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 6440
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea69d6981ecfe44c91fa7e99747637c
+      internalID: -294893570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6160
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf6f57eb0490374392690696ef742a5
+      internalID: 1125507402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_46
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 6160
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c92c45bd1a24c49bb08cca4546ab3a
+      internalID: 232965969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_47
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 6160
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe23612a8097eb40b7b6a6582b153ab
+      internalID: 1905081836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_48
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 6160
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b052840b0b58ae42b6d9567c5f3b370
+      internalID: -1557125905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_49
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 6160
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df615340a5bc90841b5721aee093c762
+      internalID: 1452671760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5880
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e1832f4aa8fc143bc3d164134f83e7
+      internalID: 489359924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_51
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5880
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ac6d9ae93085042babe0075c7bbd99
+      internalID: 1776381372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_52
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 5880
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5493973291ab43d44ab476fab9bb4065
+      internalID: 862451319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_53
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 5880
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a8e24d6d42fee4b81a9459ed71ec7a
+      internalID: 2041132043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_54
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 5880
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2495aaf374eabcc428d15cd50e7e4142
+      internalID: -835565217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5600
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44622da22ae6204787ff882df91a960
+      internalID: -612819002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_56
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5600
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd99b797ab325f54d82349e7c392bd2f
+      internalID: -820132160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_57
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 5600
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7ca4b885f61a3458526994be65f231
+      internalID: 286023269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_58
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 5600
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7840ceecdacf01e4b901d7a1b670eec3
+      internalID: -660706742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_59
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 5600
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a495a24a620c24996af10f834da4e7
+      internalID: 1518761865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5320
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4bf4ef04ed5f542844057652a4a997
+      internalID: -241322334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_61
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5320
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577f6caabb8319547bed4d9cda031162
+      internalID: 476876380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_62
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 5320
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533f055899e9c70499765611517f28a7
+      internalID: 382621000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_63
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 5320
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaac0b134a48d54b973288ea51367cf
+      internalID: 1974090772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_64
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 5320
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b40428b3e0384248a5933a9dd4e1876
+      internalID: -564225590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5040
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba37223e57ec3354e92a5ee14c21aab3
+      internalID: -645829800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_66
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5040
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cce88d34070b944790bdf6e0732aaaa
+      internalID: 1918759021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_67
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 5040
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1556195b697e97645b190744a4bcfc39
+      internalID: 1388761144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_68
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 5040
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a4f816fb99556438833692f023a398
+      internalID: 991380062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_69
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 5040
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265fc3aa91ab01c4a8a61bdf130f5bfa
+      internalID: -500716904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4760
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e30f8e12f8ee441a6eef6d3a5e63a8
+      internalID: 1883120006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_71
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4760
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9c2a14e7962e24abfb8ea155390c32
+      internalID: 72013493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_72
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 4760
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2783124db3594d249b1bb6ca865b17b7
+      internalID: -379884452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_73
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 4760
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fbe792203000c4e896a7332e2c1b1a
+      internalID: 775613843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_74
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 4760
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6a090e879c5b1408fa24be2fbea5f8
+      internalID: -232900312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4480
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587dc74be4536d443a43eab53eb5d33d
+      internalID: -634393213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_76
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4480
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2266499c12ba65d44bb14569a91a3059
+      internalID: -1529629707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_77
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 4480
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f56c35d889ac94e84b84fdbcde4824
+      internalID: 1112364001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_78
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 4480
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2062cfd02bf0348a1ed6978f8aa050
+      internalID: 2144049280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_79
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 4480
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065e16c96c3363c4d8afc02c08718f5e
+      internalID: -1313213433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f89922c1bc3f04485245c78e1a82f4
+      internalID: 1703324210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_81
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4200
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa8b76df1b2e884481092e4c6847c7d
+      internalID: 1482395168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_82
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 4200
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df319b041bb4a94db3036c87a0d72b7
+      internalID: 1925587156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_83
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 4200
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a7ac97c099f3d43a51ee9230dcc6ed
+      internalID: -1416002241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_84
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 4200
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6c6c292028792499d5695deabdb844
+      internalID: 598064158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3920
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6072e73725f44b47853bc35eb2a9109
+      internalID: 338206883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_86
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3920
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9662d7838a8f4b449e0fb2dd3abcbb1
+      internalID: -1763541805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_87
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3920
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614fc9da1aa3e5f4f8e08707b6cbe54a
+      internalID: -1215616537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_88
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 3920
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ae6e4d6ab695544b2fa15a41dc5b34
+      internalID: 1034432144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_89
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 3920
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c93207b0c16bc141bf6c0723da00656
+      internalID: 100840209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3640
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e38f92ac4db511488a31114dd645b5a
+      internalID: -1523914643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_91
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3640
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e73ff7f52fd46341bc8289717f1efc2
+      internalID: 1639179137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_92
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3640
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd597678ff28d949b0efa8ed7566cfd
+      internalID: 1949501828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_93
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 3640
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d68de75836ff6044947ef68e3ed5b05
+      internalID: -2020856762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_94
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 3640
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2260d01ce3ce9f045a2c6aef55dee58b
+      internalID: 1283118856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368da28cdd21b1c49b4bb6fbb8ff00ad
+      internalID: 1922527012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_96
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3360
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0e31b2383d98649a8362d714432ff4
+      internalID: -1849181081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_97
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3360
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d8fc50fbd89f94d8ff4d16e9a37771
+      internalID: -1832402346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_98
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 3360
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bb93f8f2e61264b8203bd5372feb74
+      internalID: -267022847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_99
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 3360
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9519b5849b97c754abc34c8fe3a4d240
+      internalID: -935907712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3080
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c307bcad4c317fc4cb784c388003fd43
+      internalID: -393063284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_101
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3080
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33c3b5a5ba2bfb4f8905b44132f186a
+      internalID: -337700683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_102
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3080
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12610821c615fc74495e0a50663eee54
+      internalID: -969706397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_103
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 3080
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33466d578b1cfa4e8d1b75ac813d0bc
+      internalID: -101483263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_104
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 3080
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de367d5c50198b4e8378e48f8471b9e
+      internalID: 454371700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4950433a0dae8c6459393403fbcdc54c
+      internalID: 1688793506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_106
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2800
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36436f8d5c2e77245b6ef48235d45f05
+      internalID: 104925424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_107
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2800
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c5905308828554eac1f6c809bab342
+      internalID: 1339062365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_108
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2800
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0ada2dcd82a0f419ce531f494cb0a7
+      internalID: 1885898992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_109
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2800
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557e25e8c5a48114d80f37e3f897a497
+      internalID: 2118505563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db5617c684f24c49be5f1dfda2d706d
+      internalID: 1277220266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_111
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09985128aae6ea245a389ad8f779d707
+      internalID: 1357002452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_112
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096149c467b20574f8d98c712cfc17f6
+      internalID: 1301878959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_113
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949112512a60b664292db8b943d61c18
+      internalID: 394554321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_114
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52cffed0715d744f8f9a14677d8c8b6
+      internalID: -1729114619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6a4764e7ca6384cbd1caaf725cd42c
+      internalID: 2047691004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_116
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a27ca617ce95fd419d9aa630fc55ca4
+      internalID: -320192509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_117
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6372f291d78dd5c4c80b9088ed08f1b7
+      internalID: 645118129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_118
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5016ec725cab94188947c591f23df8
+      internalID: 1411353585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_119
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9155efd8f73d942aa3ec9582242e84
+      internalID: -2083068866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c319b32fde9d2d946a5a62f73015192e
+      internalID: -250752180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_121
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4062acde51ccd74c8b3bf325862c7cc
+      internalID: 1370468020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_122
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f93a0ca5118da74fb6cfe521f6a428e
+      internalID: -585593617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_123
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941dc481397e82d418084f6c5935b2e2
+      internalID: 1993507638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_124
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c6aaa81dfd38648b6335683babed02
+      internalID: 2131750304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f83a847831fc04a9afc5f487393ec7
+      internalID: 169352247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_126
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43ce76f351933e43ad92024f5127955
+      internalID: 809947228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_127
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274ac53dfee82e84c8b2d4ad2eb4d535
+      internalID: 1710584939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_128
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bc9b004714d5e4198d3ba3a148c831
+      internalID: 1195144822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_129
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f16901acdcb9224db4e9444ca328402
+      internalID: -1338666471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ec9f153f96eba448151f00821226d3
+      internalID: 1451105507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_131
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e1e92480edb154a825ec40ce846449
+      internalID: 1842588812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_132
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f799f19ffbc1aab4b8522796c6605e1e
+      internalID: -1038759033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_133
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315ead09a3849454b91f57bdaafcbb5b
+      internalID: 515368160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_134
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d480fd3f175934548b1e39b364947e2e
+      internalID: 1460952518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b26a1fbf47bbb4d960a1c033e498eb
+      internalID: -765194611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_136
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c74208043b09004cb952cd521b3a52c
+      internalID: -2051005212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_137
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4fd5175fb5bb74ea3f2f02e3052b1b
+      internalID: -800822372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_138
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d071806b9abfe342996bbd314a664fc
+      internalID: -1200835316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_139
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab1dc64b017e21459f33126decddccc
+      internalID: -1296810013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bedadf1d442f04cbc8664622f8e52e
+      internalID: 1325348092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_141
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08ba89d94d86de4cb5457f1389db921
+      internalID: -1224829175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_142
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cfe5c17c2b5bc4fbe63826a56b6988
+      internalID: -879292694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_143
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e84ba5cdb87684f8bddc08b45fafbf
+      internalID: 1702535478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_144
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4b3ae6b416b934099d40c37a98f0a9
+      internalID: 618568058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1375926aa4e292498e72e2d6823164a
+      internalID: -632391394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_146
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e778d52a632f654ca96c8648740d105
+      internalID: -1660021397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_147
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23291657d6ff254696bc776050ff4e7
+      internalID: 954926720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_148
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2d5278b0df5b84492f84a746b33844
+      internalID: 1809445310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_149
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ad38777d65b09498147cd17e757421
+      internalID: -968378352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce332150e4c04d4eb60ed27235f9479
+      internalID: -1278531776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_151
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c217ed714582fe488ff540932dfc692
+      internalID: -1207374238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_152
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b039d9c8007a743a798c2be6ca32c8
+      internalID: 1078322050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_153
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274b14d71312d2341bcdeba73a67d89e
+      internalID: -878114667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_154
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75925142035cd5a4eb157c5b3227875d
+      internalID: -1825036018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_155
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7943fe99ca56646a514f6e77257411
+      internalID: -1057103725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_156
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32c6dbedd664fa4fbb5cd7aebea37ed
+      internalID: -949598702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_157
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97421b714419959428b8a208285aaf1e
+      internalID: -842390367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_158
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9618f08fe1041254092996b559906c78
+      internalID: 1216421830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxbreathingsprite_159
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8957690f0edbb45b068e2918a82da5
+      internalID: -96620245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 45114e15d154eb64694f24e07c12cbcb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      boxbreathingsprite_112: 1301878959
+      boxbreathingsprite_40: 189253423
+      boxbreathingsprite_62: 382621000
+      boxbreathingsprite_13: 1028999360
+      boxbreathingsprite_89: 100840209
+      boxbreathingsprite_110: 1277220266
+      boxbreathingsprite_25: -1654327201
+      boxbreathingsprite_43: -1366456644
+      boxbreathingsprite_55: -612819002
+      boxbreathingsprite_98: -267022847
+      boxbreathingsprite_70: 1883120006
+      boxbreathingsprite_56: -820132160
+      boxbreathingsprite_129: -1338666471
+      boxbreathingsprite_149: -968378352
+      boxbreathingsprite_153: -878114667
+      boxbreathingsprite_31: -1043699190
+      boxbreathingsprite_7: -775598967
+      boxbreathingsprite_10: -492780027
+      boxbreathingsprite_128: 1195144822
+      boxbreathingsprite_53: 2041132043
+      boxbreathingsprite_93: -2020856762
+      boxbreathingsprite_119: -2083068866
+      boxbreathingsprite_85: 338206883
+      boxbreathingsprite_82: 1925587156
+      boxbreathingsprite_41: 1995166458
+      boxbreathingsprite_117: 645118129
+      boxbreathingsprite_111: 1357002452
+      boxbreathingsprite_87: -1215616537
+      boxbreathingsprite_145: -632391394
+      boxbreathingsprite_144: 618568058
+      boxbreathingsprite_47: 1905081836
+      boxbreathingsprite_106: 104925424
+      boxbreathingsprite_32: 1932759559
+      boxbreathingsprite_36: 1687710265
+      boxbreathingsprite_42: 1039730234
+      boxbreathingsprite_122: -585593617
+      boxbreathingsprite_14: -733018185
+      boxbreathingsprite_94: 1283118856
+      boxbreathingsprite_28: 303105096
+      boxbreathingsprite_27: 432612886
+      boxbreathingsprite_23: -727720211
+      boxbreathingsprite_120: -250752180
+      boxbreathingsprite_126: 809947228
+      boxbreathingsprite_114: -1729114619
+      boxbreathingsprite_152: 1078322050
+      boxbreathingsprite_30: -1007550222
+      boxbreathingsprite_135: -765194611
+      boxbreathingsprite_130: 1451105507
+      boxbreathingsprite_20: 1199027433
+      boxbreathingsprite_8: -1928238151
+      boxbreathingsprite_49: 1452671760
+      boxbreathingsprite_77: 1112364001
+      boxbreathingsprite_138: -1200835316
+      boxbreathingsprite_147: 954926720
+      boxbreathingsprite_158: 1216421830
+      boxbreathingsprite_99: -935907712
+      boxbreathingsprite_5: 2031585314
+      boxbreathingsprite_90: -1523914643
+      boxbreathingsprite_74: -232900312
+      boxbreathingsprite_148: 1809445310
+      boxbreathingsprite_22: 1700453233
+      boxbreathingsprite_116: -320192509
+      boxbreathingsprite_131: 1842588812
+      boxbreathingsprite_39: -428762023
+      boxbreathingsprite_109: 2118505563
+      boxbreathingsprite_19: 945149830
+      boxbreathingsprite_0: 653386403
+      boxbreathingsprite_57: 286023269
+      boxbreathingsprite_2: -944806951
+      boxbreathingsprite_83: -1416002241
+      boxbreathingsprite_64: -564225590
+      boxbreathingsprite_80: 1703324210
+      boxbreathingsprite_97: -1832402346
+      boxbreathingsprite_139: -1296810013
+      boxbreathingsprite_33: -848930275
+      boxbreathingsprite_124: 2131750304
+      boxbreathingsprite_132: -1038759033
+      boxbreathingsprite_155: -1057103725
+      boxbreathingsprite_60: -241322334
+      boxbreathingsprite_71: 72013493
+      boxbreathingsprite_156: -949598702
+      boxbreathingsprite_37: 1793583711
+      boxbreathingsprite_48: -1557125905
+      boxbreathingsprite_125: 169352247
+      boxbreathingsprite_1: 192896369
+      boxbreathingsprite_108: 1885898992
+      boxbreathingsprite_134: 1460952518
+      boxbreathingsprite_35: -1637804131
+      boxbreathingsprite_11: 541184130
+      boxbreathingsprite_113: 394554321
+      boxbreathingsprite_54: -835565217
+      boxbreathingsprite_69: -500716904
+      boxbreathingsprite_51: 1776381372
+      boxbreathingsprite_52: 862451319
+      boxbreathingsprite_73: 775613843
+      boxbreathingsprite_95: 1922527012
+      boxbreathingsprite_137: -800822372
+      boxbreathingsprite_107: 1339062365
+      boxbreathingsprite_121: 1370468020
+      boxbreathingsprite_81: 1482395168
+      boxbreathingsprite_3: -1879454753
+      boxbreathingsprite_12: -1078628693
+      boxbreathingsprite_18: 304135364
+      boxbreathingsprite_66: 1918759021
+      boxbreathingsprite_79: -1313213433
+      boxbreathingsprite_4: -773330065
+      boxbreathingsprite_78: 2144049280
+      boxbreathingsprite_15: -1026071595
+      boxbreathingsprite_88: 1034432144
+      boxbreathingsprite_84: 598064158
+      boxbreathingsprite_105: 1688793506
+      boxbreathingsprite_92: 1949501828
+      boxbreathingsprite_157: -842390367
+      boxbreathingsprite_123: 1993507638
+      boxbreathingsprite_46: 232965969
+      boxbreathingsprite_50: 489359924
+      boxbreathingsprite_17: 1039301637
+      boxbreathingsprite_115: 2047691004
+      boxbreathingsprite_159: -96620245
+      boxbreathingsprite_100: -393063284
+      boxbreathingsprite_141: -1224829175
+      boxbreathingsprite_61: 476876380
+      boxbreathingsprite_65: -645829800
+      boxbreathingsprite_136: -2051005212
+      boxbreathingsprite_154: -1825036018
+      boxbreathingsprite_102: -969706397
+      boxbreathingsprite_96: -1849181081
+      boxbreathingsprite_140: 1325348092
+      boxbreathingsprite_68: 991380062
+      boxbreathingsprite_143: 1702535478
+      boxbreathingsprite_45: 1125507402
+      boxbreathingsprite_133: 515368160
+      boxbreathingsprite_86: -1763541805
+      boxbreathingsprite_34: -909717694
+      boxbreathingsprite_91: 1639179137
+      boxbreathingsprite_150: -1278531776
+      boxbreathingsprite_38: 350726371
+      boxbreathingsprite_21: 710500011
+      boxbreathingsprite_44: -294893570
+      boxbreathingsprite_26: 1465629037
+      boxbreathingsprite_59: 1518761865
+      boxbreathingsprite_24: -1822867084
+      boxbreathingsprite_63: 1974090772
+      boxbreathingsprite_103: -101483263
+      boxbreathingsprite_72: -379884452
+      boxbreathingsprite_142: -879292694
+      boxbreathingsprite_6: -806124002
+      boxbreathingsprite_9: -1198942831
+      boxbreathingsprite_104: 454371700
+      boxbreathingsprite_29: -1918777152
+      boxbreathingsprite_16: 2132286847
+      boxbreathingsprite_151: -1207374238
+      boxbreathingsprite_101: -337700683
+      boxbreathingsprite_75: -634393213
+      boxbreathingsprite_58: -660706742
+      boxbreathingsprite_118: 1411353585
+      boxbreathingsprite_67: 1388761144
+      boxbreathingsprite_76: -1529629707
+      boxbreathingsprite_127: 1710584939
+      boxbreathingsprite_146: -1660021397
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
