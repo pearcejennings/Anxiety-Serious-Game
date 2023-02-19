@@ -8,6 +8,8 @@ public class ButtonManager : MonoBehaviour
 {
 
     public GameObject spaceBar;
+    public GameObject Jkey;
+    public GameObject Fkey;
 
     bool isSpacePressed = false;
     bool isJPressed = false;
@@ -17,7 +19,7 @@ public class ButtonManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spaceBar.GetComponent<Button>();
+        
     }
 
     // Update is called once per frame
@@ -35,6 +37,33 @@ public class ButtonManager : MonoBehaviour
             isSpacePressed = false;
             EventSystem.current.SetSelectedGameObject(null);
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            isJPressed = true;
+            Jkey.GetComponent<Button>().Select();
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            isJPressed = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            isFPressed = true;
+            Fkey.GetComponent<Button>().Select();
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            isFPressed = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
     }
 
    
