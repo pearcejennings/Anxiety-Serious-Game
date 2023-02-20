@@ -6,15 +6,21 @@ using UnityEngine.EventSystems;
 
 public class ButtonManager : MonoBehaviour
 {
-
     public GameObject spaceBar;
-    public GameObject Jkey;
     public GameObject Fkey;
+    public GameObject Jkey;
+    public GameObject Ekey;
+    public GameObject Ikey;
+    public GameObject Qkey;
+    public GameObject Pkey;
 
     bool isSpacePressed = false;
     bool isJPressed = false;
     bool isFPressed = false;
-
+    bool isEPressed = false;
+    bool isIPressed = false;
+    bool isQPressed = false;
+    bool isPPressed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -64,10 +70,60 @@ public class ButtonManager : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(null);
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isEPressed = true;
+            Ekey.GetComponent<Button>().Select();
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            isEPressed = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            isIPressed = true;
+            Ikey.GetComponent<Button>().Select();
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            isIPressed = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            isQPressed = true;
+            Qkey.GetComponent<Button>().Select();
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            isQPressed = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            isPPressed = true;
+            Pkey.GetComponent<Button>().Select();
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            isPPressed = false;
+            EventSystem.current.SetSelectedGameObject(null);
+        }
     }
 
    
-
-
+   
 
 }
