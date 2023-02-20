@@ -31,96 +31,95 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             isSpacePressed = true;
             spaceBar.GetComponent<Button>().Select();
-            
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            isSpacePressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    isSpacePressed = false;
+        //    spaceBar.GetComponent<Button>().OnDeselect(null);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKey(KeyCode.J))
         {
             isJPressed = true;
             Jkey.GetComponent<Button>().Select();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.J))
-        {
-            isJPressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.J))
+        //{
+        //    isJPressed = false;
+        //    Jkey.GetComponent<Button>().OnDeselect(null);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKey(KeyCode.F))
         {
             isFPressed = true;
             Fkey.GetComponent<Button>().Select();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            isFPressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.F))
+        //{
+        //    isFPressed = false;
+        //    EventSystem.current.SetSelectedGameObject(null);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
             isEPressed = true;
             Ekey.GetComponent<Button>().Select();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            isEPressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.E))
+        //{
+        //    isEPressed = false;
+        //    EventSystem.current.SetSelectedGameObject(null);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKey(KeyCode.I))
         {
             isIPressed = true;
             Ikey.GetComponent<Button>().Select();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.I))
-        {
-            isIPressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.I))
+        //{
+        //    isIPressed = false;
+        //    EventSystem.current.SetSelectedGameObject(null);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q))
         {
             isQPressed = true;
             Qkey.GetComponent<Button>().Select();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            isQPressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.Q))
+        //{
+        //    isQPressed = false;
+        //    EventSystem.current.SetSelectedGameObject(null);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKey(KeyCode.P))
         {
             isPPressed = true;
             Pkey.GetComponent<Button>().Select();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            isPPressed = false;
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        //if (Input.GetKeyUp(KeyCode.P))
+        //{
+        //    isPPressed = false;
+        //    EventSystem.current.SetSelectedGameObject(null);
+        //}
     }
 
    
