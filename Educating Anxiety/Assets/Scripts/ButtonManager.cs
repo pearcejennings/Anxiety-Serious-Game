@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class ButtonManager : MonoBehaviour
 {
+    // game objects for button objects
     public GameObject spaceBar;
     public GameObject Fkey;
     public GameObject Jkey;
@@ -14,6 +15,8 @@ public class ButtonManager : MonoBehaviour
     public GameObject Qkey;
     public GameObject Pkey;
 
+
+    //bools for pressing logic
     bool isSpacePressed = false;
     bool isJPressed = false;
     bool isFPressed = false;
@@ -31,95 +34,105 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+
+        //to deselect buttons incase user clicks with mouse
+        if (Input.GetMouseButtonUp(0))
+        {
+            spaceBar.GetComponent<Button>().OnDeselect(null);
+        }
+
+        //interaction logic for if space is pressed
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             isSpacePressed = true;
-            spaceBar.GetComponent<Button>().Select();
+            spaceBar.GetComponent<Button>().interactable = false;
         }
 
-        //if (Input.GetKeyUp(KeyCode.Space))
-        //{
-        //    isSpacePressed = false;
-        //    spaceBar.GetComponent<Button>().OnDeselect(null);
-        //}
-
-        if (Input.GetKey(KeyCode.J))
+        else if (Input.GetKeyUp(KeyCode.Space))
         {
-            isJPressed = true;
-            Jkey.GetComponent<Button>().Select();
-
+            isSpacePressed = false;
+            spaceBar.GetComponent<Button>().interactable = true;
         }
 
-        //if (Input.GetKeyUp(KeyCode.J))
-        //{
-        //    isJPressed = false;
-        //    Jkey.GetComponent<Button>().OnDeselect(null);
-        //}
-
-        if (Input.GetKey(KeyCode.F))
+        //interaction logic for if F is pressed
+        if (Input.GetKeyDown(KeyCode.F))
         {
             isFPressed = true;
-            Fkey.GetComponent<Button>().Select();
-
+            Fkey.GetComponent<Button>().interactable = false;
         }
 
-        //if (Input.GetKeyUp(KeyCode.F))
-        //{
-        //    isFPressed = false;
-        //    EventSystem.current.SetSelectedGameObject(null);
-        //}
+        else if (Input.GetKeyUp(KeyCode.F))
+        {
+            isFPressed = false;
+            Fkey.GetComponent<Button>().interactable = true;
+        }
 
-        if (Input.GetKey(KeyCode.E))
+        //interaction logic for if J is pressed
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            isJPressed = true;
+            Jkey.GetComponent<Button>().interactable = false;
+        }
+
+        else if (Input.GetKeyUp(KeyCode.J))
+        {
+            isJPressed = false;
+            Jkey.GetComponent<Button>().interactable = true;
+        }
+
+        //interaction logic for if E is pressed
+        if (Input.GetKeyDown(KeyCode.E))
         {
             isEPressed = true;
-            Ekey.GetComponent<Button>().Select();
-
+            Ekey.GetComponent<Button>().interactable = false;
         }
 
-        //if (Input.GetKeyUp(KeyCode.E))
-        //{
-        //    isEPressed = false;
-        //    EventSystem.current.SetSelectedGameObject(null);
-        //}
+        else if (Input.GetKeyUp(KeyCode.E))
+        {
+            isEPressed = false;
+            Ekey.GetComponent<Button>().interactable = true;
+        }
 
-        if (Input.GetKey(KeyCode.I))
+        //interaction logic for if I is pressed
+        if (Input.GetKeyDown(KeyCode.I))
         {
             isIPressed = true;
-            Ikey.GetComponent<Button>().Select();
-
+            Ikey.GetComponent<Button>().interactable = false;
         }
 
-        //if (Input.GetKeyUp(KeyCode.I))
-        //{
-        //    isIPressed = false;
-        //    EventSystem.current.SetSelectedGameObject(null);
-        //}
+        else if (Input.GetKeyUp(KeyCode.I))
+        {
+            isIPressed = false;
+            Ikey.GetComponent<Button>().interactable = true;
+        }
 
-        if (Input.GetKey(KeyCode.Q))
+        //interaction logic for if Q is pressed
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             isQPressed = true;
-            Qkey.GetComponent<Button>().Select();
-
+            Qkey.GetComponent<Button>().interactable = false;
         }
 
-        //if (Input.GetKeyUp(KeyCode.Q))
-        //{
-        //    isQPressed = false;
-        //    EventSystem.current.SetSelectedGameObject(null);
-        //}
+        else if (Input.GetKeyUp(KeyCode.Q))
+        {
+            isQPressed = false;
+            Qkey.GetComponent<Button>().interactable = true;
+        }
 
-        if (Input.GetKey(KeyCode.P))
+
+        //interaction logic for if P is pressed
+        if (Input.GetKeyDown(KeyCode.P))
         {
             isPPressed = true;
-            Pkey.GetComponent<Button>().Select();
-
+            Pkey.GetComponent<Button>().interactable = false;
         }
 
-        //if (Input.GetKeyUp(KeyCode.P))
-        //{
-        //    isPPressed = false;
-        //    EventSystem.current.SetSelectedGameObject(null);
-        //}
+        else if (Input.GetKeyUp(KeyCode.P))
+        {
+            isPPressed = false;
+            Pkey.GetComponent<Button>().interactable = true;
+        }
+
     }
 
    
