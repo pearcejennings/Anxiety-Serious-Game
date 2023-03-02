@@ -16,7 +16,7 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.anyKey)
         {
             SceneManager.LoadScene("Generalised Anxiety");
         }
