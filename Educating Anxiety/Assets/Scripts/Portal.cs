@@ -123,12 +123,7 @@ public class Portal : MonoBehaviour {
     }
 
     void HandleClipping () {
-        // There are two main graphical issues when slicing travellers
-        // 1. Tiny sliver of mesh drawn on backside of portal
-        //    Ideally the oblique clip plane would sort this out, but even with 0 offset, tiny sliver still visible
-        // 2. Tiny seam between the sliced mesh, and the rest of the model drawn onto the portal screen
-        // This function tries to address these issues by modifying the slice parameters when rendering the view from the portal
-        // Would be great if this could be fixed more elegantly, but this is the best I can figure out for now
+        //handle clipping
         const float hideDst = -1000;
         const float showDst = 1000;
         float screenThickness = linkedPortal.ProtectScreenFromClipping (portalCam.transform.position);
@@ -248,8 +243,7 @@ public class Portal : MonoBehaviour {
 
     }
 
-    // Use custom projection matrix to align portal camera's near clip plane with the surface of the portal
-    // Note that this affects precision of the depth buffer, which can cause issues with effects like screenspace AO
+   
     void SetNearClipPlane () {
         // Learning resource:
         // http://www.terathon.com/lengyel/Lengyel-Oblique.pdf
@@ -295,9 +289,7 @@ public class Portal : MonoBehaviour {
         }
     }
 
-    /*
-     ** Some helper/convenience stuff:
-     */
+
 
     int SideOfPortal (Vector3 pos) {
         return System.Math.Sign (Vector3.Dot (pos - transform.position, transform.forward));
