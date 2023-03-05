@@ -4,24 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Animations;
-using UnityEngine.SceneManagement;
+
 
 public class ButtonManager : MonoBehaviour
 {
     //game objects for button objects
     public GameObject spaceBar;
-    public GameObject Fkey;
-    public GameObject Jkey;
-    public GameObject Ekey;
-    public GameObject Ikey;
-    public GameObject Qkey;
-    public GameObject Pkey;
+    public GameObject fKey;
+    public GameObject jKey;
+    public GameObject eKey;
+    public GameObject iKey;
+    public GameObject qKey;
+    public GameObject pKey;
 
     //gif variables
-    public GameObject SquareBreathingGif;
+    public GameObject squareBreathingGif;
     private Animator gif;
-    private float animationspeed;
-    private int coroutinecount;
+    private float animationSpeed;
+    private int coroutineCount;
 
     //bools for pressing logic
     bool isSpacePressed = false;
@@ -35,15 +35,17 @@ public class ButtonManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gif = SquareBreathingGif.GetComponent<Animator>();
-        animationspeed = gif.speed;
+        gif = squareBreathingGif.GetComponent<Animator>();
+        animationSpeed = gif.speed;
         gif.speed = 0;
-        coroutinecount = 0;
+        coroutineCount = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(coroutineCount);
+
         //to deselect buttons incase user clicks with mouse
         if (Input.GetMouseButtonUp(0))
         {
@@ -54,6 +56,7 @@ public class ButtonManager : MonoBehaviour
         FandJkeys();
         EandIkeys();
         QandPkeys();
+        RequirementsForGrounding();
 
     }
 
@@ -76,20 +79,14 @@ public class ButtonManager : MonoBehaviour
         //enable next keys
         if (isSpacePressed == true)
         {
-            Fkey.SetActive(true);
-            Jkey.SetActive(true);
+            fKey.SetActive(true);
+            jKey.SetActive(true);
             
         }
         else
         {
-            Fkey.SetActive(false);
-            Jkey.SetActive(false);
-        }
-
-        //continue gif
-        if ((isSpacePressed == true) && (coroutinecount == 0))
-        {
-            StartCoroutine(continuegif());
+            fKey.SetActive(false);
+            jKey.SetActive(false);
         }
     }
 
@@ -100,46 +97,40 @@ public class ButtonManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             isFPressed = true;
-            Fkey.GetComponent<Button>().interactable = false;
+            fKey.GetComponent<Button>().interactable = false;
         }
 
         else if (Input.GetKeyUp(KeyCode.F))
         {
             isFPressed = false;
-            Fkey.GetComponent<Button>().interactable = true;
+            fKey.GetComponent<Button>().interactable = true;
         }
 
         //interaction logic for if J is pressed
         if (Input.GetKeyDown(KeyCode.J))
         {
             isJPressed = true;
-            Jkey.GetComponent<Button>().interactable = false;
+            jKey.GetComponent<Button>().interactable = false;
         }
 
         else if (Input.GetKeyUp(KeyCode.J))
         {
             isJPressed = false;
-            Jkey.GetComponent<Button>().interactable = true;
+            jKey.GetComponent<Button>().interactable = true;
         }
 
         //enable next keys
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true))
         {
            
-            Ekey.SetActive(true);
-            Ikey.SetActive(true);
+            eKey.SetActive(true);
+            iKey.SetActive(true);
          
         }
         else
         {
-            Ekey.SetActive(false);
-            Ikey.SetActive(false);
-        }
-
-        //continue gif
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (coroutinecount == 1))
-        {
-            StartCoroutine(continuegif());
+            eKey.SetActive(false);
+            iKey.SetActive(false);
         }
     }
 
@@ -149,46 +140,40 @@ public class ButtonManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isEPressed = true;
-            Ekey.GetComponent<Button>().interactable = false;
+            eKey.GetComponent<Button>().interactable = false;
         }
 
         else if (Input.GetKeyUp(KeyCode.E))
         {
             isEPressed = false;
-            Ekey.GetComponent<Button>().interactable = true;
+            eKey.GetComponent<Button>().interactable = true;
         }
 
         //interaction logic for if I is pressed
         if (Input.GetKeyDown(KeyCode.I))
         {
             isIPressed = true;
-            Ikey.GetComponent<Button>().interactable = false;
+            iKey.GetComponent<Button>().interactable = false;
         }
 
         else if (Input.GetKeyUp(KeyCode.I))
         {
             isIPressed = false;
-            Ikey.GetComponent<Button>().interactable = true;
+            iKey.GetComponent<Button>().interactable = true;
         }
 
         //enable next keys
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true))
         {
             
-            Qkey.SetActive(true);
-            Pkey.SetActive(true);
+            qKey.SetActive(true);
+            pKey.SetActive(true);
 
         }
         else
         {
-            Qkey.SetActive(false);
-            Pkey.SetActive(false);
-        }
-
-        //continue gif
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (coroutinecount == 2))
-        {
-            StartCoroutine(continuegif());
+            qKey.SetActive(false);
+            pKey.SetActive(false);
         }
 
     }
@@ -199,13 +184,13 @@ public class ButtonManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             isQPressed = true;
-            Qkey.GetComponent<Button>().interactable = false;
+            qKey.GetComponent<Button>().interactable = false;
         }
 
         else if (Input.GetKeyUp(KeyCode.Q))
         {
             isQPressed = false;
-            Qkey.GetComponent<Button>().interactable = true;
+            qKey.GetComponent<Button>().interactable = true;
         }
 
 
@@ -213,37 +198,79 @@ public class ButtonManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             isPPressed = true;
-            Pkey.GetComponent<Button>().interactable = false;
+            pKey.GetComponent<Button>().interactable = false;
         }
 
         else if (Input.GetKeyUp(KeyCode.P))
         {
             isPPressed = false;
-            Pkey.GetComponent<Button>().interactable = true;
-        }
-
-        //keep gif going
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == true) && (isPPressed == true) && (coroutinecount == 3))
-        {
-            StartCoroutine(holdfor4continue());
+            pKey.GetComponent<Button>().interactable = true;
         }
        
     }
 
-    IEnumerator continuegif()
+    private void RequirementsForGrounding()
     {
-        coroutinecount++;
+        //first phase
+        if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 0))
+        {
+            StartCoroutine(ContinueGrounding());
+        }
+
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 1))
+        {
+            StartCoroutine(ContinueGrounding());
+        }
+
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 2))
+        {
+            StartCoroutine(ContinueGrounding());
+        }
+
+        //middle phase
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == true) && (isPPressed == true) && (coroutineCount == 3))
+        {
+            StartCoroutine(MiddleOfGrounding());
+        }
+
+        //release phase
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 4))
+        {
+            StartCoroutine(ContinueGrounding());
+        }
+
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 5))
+        {
+            StartCoroutine(ContinueGrounding());
+        }
+
+        if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 6))
+        {
+            StartCoroutine(ContinueGrounding());
+        }
+
+        if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 7))
+        {
+            StartCoroutine(MiddleOfGrounding());
+        }
+    }
+
+
+
+    IEnumerator ContinueGrounding()
+    {
+        coroutineCount++;
         gif.speed = 1;
         yield return new WaitForSeconds(1);
         gif.speed = 0;
         
     }
 
-    IEnumerator holdfor4continue()
+    IEnumerator MiddleOfGrounding()
     {
-        coroutinecount++;
+        coroutineCount++;
         gif.speed = 1;
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(5);
         gif.speed = 0;
        
     }
