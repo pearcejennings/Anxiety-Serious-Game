@@ -22,6 +22,7 @@ public class ButtonManager : MonoBehaviour
     private Animator squareAnim;
     private float animationSpeed;
     private int coroutineCount;
+    private int cyclesComplete;
 
     //bools for pressing logic
     bool isSpacePressed = false;
@@ -45,11 +46,20 @@ public class ButtonManager : MonoBehaviour
     void Update()
     {
         Debug.Log(coroutineCount);
+        Debug.Log(cyclesComplete);
 
         //to deselect buttons incase user clicks with mouse
         if (Input.GetMouseButtonUp(0))
         {
             spaceBar.GetComponent<Button>().OnDeselect(null);
+        }
+
+        //resets breathing to base state if player does not follow inputs
+        if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount != 8))
+        {
+            squareAnim.Rebind();
+            squareAnim.Update(0f);
+            coroutineCount = 0;
         }
 
         SpaceIsPressed();
@@ -234,15 +244,7 @@ public class ButtonManager : MonoBehaviour
 
         if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 7))
         {
-            StartCoroutine(MiddleOfGrounding());
-        }
-
-        //resets breathing to base state if player does not follow inputs
-        if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount != 8))
-        {
-            squareAnim.Rebind();
-            squareAnim.Update(0f);
-            coroutineCount = 0;
+            StartCoroutine(EndOfGrounding());
         }
 
     }
@@ -260,6 +262,12 @@ public class ButtonManager : MonoBehaviour
         //halt animation
         squareAnim.speed = 0;
 
+        //disable space
+        if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        {
+            spaceBar.SetActive(false);
+            
+        }
 
         //enable next keys f and j
         if ((isSpacePressed == true) && (coroutineCount < 4))
@@ -269,7 +277,7 @@ public class ButtonManager : MonoBehaviour
 
         }
         //re-disable keys f and j
-        else if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
         {
             fKey.SetActive(false);
             jKey.SetActive(false);
@@ -285,7 +293,7 @@ public class ButtonManager : MonoBehaviour
 
         }
         //re-disable keys e and i
-        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
         {
             eKey.SetActive(false);
             iKey.SetActive(false);
@@ -300,12 +308,7 @@ public class ButtonManager : MonoBehaviour
             pKey.SetActive(true);
 
         }
-        //re-disable keys q and p
-        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
-        {
-            qKey.SetActive(false);
-            pKey.SetActive(false);
-        }
+     
     }
 
     IEnumerator MiddleOfGrounding()
@@ -317,8 +320,29 @@ public class ButtonManager : MonoBehaviour
         yield return new WaitForSeconds(5.2f);
         //halt animation
         squareAnim.speed = 0;
-       
+        //disable q and p
+        qKey.SetActive(false);
+        pKey.SetActive(false);
+
     }
 
-
+    IEnumerator EndOfGrounding()
+    {
+        //increase coroutine count for progression requirements
+        coroutineCount++;
+        //progress animation by 5 seconds
+        squareAnim.speed = 1;
+        yield return new WaitForSeconds(5.2f);
+        //halt animation
+        squareAnim.speed = 0;
+        //add to cycle count
+        cyclesComplete++;
+        //reset cycle
+        coroutineCount = 0;
+        //re-enable space bar
+        spaceBar.SetActive(true);
+    }
 }
+
+
+//whenever gif is playing (gif speed more than 0), and any new keys are pressed or released, then reset cycle
