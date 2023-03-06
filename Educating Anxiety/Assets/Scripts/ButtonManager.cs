@@ -19,7 +19,7 @@ public class ButtonManager : MonoBehaviour
 
     //gif variables
     public GameObject squareBreathingGif;
-    private Animator gif;
+    private Animator squareAnim;
     private float animationSpeed;
     private int coroutineCount;
 
@@ -35,9 +35,9 @@ public class ButtonManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gif = squareBreathingGif.GetComponent<Animator>();
-        animationSpeed = gif.speed;
-        gif.speed = 0;
+        squareAnim = squareBreathingGif.GetComponent<Animator>();
+        animationSpeed = squareAnim.speed;
+        squareAnim.speed = 0;
         coroutineCount = 0;
     }
 
@@ -76,18 +76,13 @@ public class ButtonManager : MonoBehaviour
             spaceBar.GetComponent<Button>().interactable = true;
         }
 
-        //enable next keys
-        if (isSpacePressed == true)
-        {
-            fKey.SetActive(true);
-            jKey.SetActive(true);
-            
-        }
-        else
+        //keep next keys disabled
+        if (isSpacePressed == false)
         {
             fKey.SetActive(false);
             jKey.SetActive(false);
         }
+
     }
 
     private void FandJkeys()
@@ -119,19 +114,13 @@ public class ButtonManager : MonoBehaviour
             jKey.GetComponent<Button>().interactable = true;
         }
 
-        //enable next keys
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true))
-        {
-           
-            eKey.SetActive(true);
-            iKey.SetActive(true);
-         
-        }
-        else
+        //keep next keys disabled
+        if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false))
         {
             eKey.SetActive(false);
             iKey.SetActive(false);
         }
+
     }
 
     private void EandIkeys ()
@@ -162,15 +151,8 @@ public class ButtonManager : MonoBehaviour
             iKey.GetComponent<Button>().interactable = true;
         }
 
-        //enable next keys
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true))
-        {
-            
-            qKey.SetActive(true);
-            pKey.SetActive(true);
-
-        }
-        else
+        //keep next keys disabled
+        if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false))
         {
             qKey.SetActive(false);
             pKey.SetActive(false);
@@ -211,6 +193,7 @@ public class ButtonManager : MonoBehaviour
 
     private void RequirementsForGrounding()
     {
+       
         //first phase
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 0))
         {
@@ -253,25 +236,87 @@ public class ButtonManager : MonoBehaviour
         {
             StartCoroutine(MiddleOfGrounding());
         }
+
+        //resets breathing to base state if player does not follow inputs
+        if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount != 8))
+        {
+            squareAnim.Rebind();
+            squareAnim.Update(0f);
+            coroutineCount = 0;
+        }
+
     }
 
 
 
     IEnumerator ContinueGrounding()
     {
+
+        //increase coroutine count for progression requirements
         coroutineCount++;
-        gif.speed = 1;
+        //progress animation by 1 seconds
+        squareAnim.speed = 1;
         yield return new WaitForSeconds(1);
-        gif.speed = 0;
-        
+        //halt animation
+        squareAnim.speed = 0;
+
+
+        //enable next keys f and j
+        if ((isSpacePressed == true) && (coroutineCount < 4))
+        {
+            fKey.SetActive(true);
+            jKey.SetActive(true);
+
+        }
+        //re-disable keys f and j
+        else if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        {
+            fKey.SetActive(false);
+            jKey.SetActive(false);
+        }
+
+
+        //enable next keys e and i
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (coroutineCount < 4))
+        {
+
+            eKey.SetActive(true);
+            iKey.SetActive(true);
+
+        }
+        //re-disable keys e and i
+        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        {
+            eKey.SetActive(false);
+            iKey.SetActive(false);
+        }
+
+
+        //enable next keys q and p
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (coroutineCount < 4))
+        {
+
+            qKey.SetActive(true);
+            pKey.SetActive(true);
+
+        }
+        //re-disable keys q and p
+        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        {
+            qKey.SetActive(false);
+            pKey.SetActive(false);
+        }
     }
 
     IEnumerator MiddleOfGrounding()
     {
+        //increase coroutine count for progression requirements
         coroutineCount++;
-        gif.speed = 1;
-        yield return new WaitForSeconds(5);
-        gif.speed = 0;
+        //progress animation by 5 seconds
+        squareAnim.speed = 1;
+        yield return new WaitForSeconds(5.2f);
+        //halt animation
+        squareAnim.speed = 0;
        
     }
 
