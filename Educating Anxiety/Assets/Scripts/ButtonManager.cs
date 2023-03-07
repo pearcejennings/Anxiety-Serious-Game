@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 
 public class ButtonManager : MonoBehaviour
@@ -32,6 +33,7 @@ public class ButtonManager : MonoBehaviour
     bool isIPressed = false;
     bool isQPressed = false;
     bool isPPressed = false;
+    bool keysReleased = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +49,7 @@ public class ButtonManager : MonoBehaviour
     {
         Debug.Log(coroutineCount);
         Debug.Log(cyclesComplete);
+        Debug.Log(keysReleased);
 
         //to deselect buttons incase user clicks with mouse
         if (Input.GetMouseButtonUp(0))
@@ -62,11 +65,39 @@ public class ButtonManager : MonoBehaviour
             coroutineCount = 0;
         }
 
+        //whenever gif is playing (gif speed more than 0), and any new keys are pressed or released, then reset cycle
+        if ((squareAnim.speed > 0) && (Input.anyKeyDown))
+        {
+            squareAnim.Rebind();
+            squareAnim.Update(0f);
+            coroutineCount = 0;
+        }
+        //or released
+        if ((Input.GetKeyUp(KeyCode.Space)) || (Input.GetKeyUp(KeyCode.F)) || (Input.GetKeyUp(KeyCode.J)) || (Input.GetKeyUp(KeyCode.E)) || (Input.GetKeyUp(KeyCode.I)) || (Input.GetKeyUp(KeyCode.Q)) || (Input.GetKeyUp(KeyCode.P)))
+        {
+            keysReleased = true;
+        }
+        if ((squareAnim.speed > 0) && (keysReleased == true))
+        {
+            squareAnim.Rebind();
+            squareAnim.Update(0f);
+            coroutineCount = 0;
+        }
+        //release key bool
+        keysReleased = false;
+
+
         SpaceIsPressed();
         FandJkeys();
         EandIkeys();
         QandPkeys();
         RequirementsForGrounding();
+
+
+        if (cyclesComplete == 3)
+        {
+            SceneManager.LoadScene("End Screen");
+        }
 
     }
 
@@ -261,6 +292,8 @@ public class ButtonManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         //halt animation
         squareAnim.speed = 0;
+ 
+
 
         //disable space
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
@@ -308,6 +341,7 @@ public class ButtonManager : MonoBehaviour
             pKey.SetActive(true);
 
         }
+
      
     }
 
@@ -323,6 +357,7 @@ public class ButtonManager : MonoBehaviour
         //disable q and p
         qKey.SetActive(false);
         pKey.SetActive(false);
+        
 
     }
 
@@ -341,8 +376,8 @@ public class ButtonManager : MonoBehaviour
         coroutineCount = 0;
         //re-enable space bar
         spaceBar.SetActive(true);
+      
     }
 }
 
 
-//whenever gif is playing (gif speed more than 0), and any new keys are pressed or released, then reset cycle
