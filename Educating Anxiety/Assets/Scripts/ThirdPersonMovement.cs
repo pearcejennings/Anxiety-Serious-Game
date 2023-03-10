@@ -4,46 +4,71 @@ using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
+    public CharacterController controller;
 
-    public float playerspeed = 5f;
+    public float speed = 5f;
+    public float gravity = -9.81f;
+    public float jump = 1f;
+
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
 
 
-    void Start()
-    {
-        
-    }
+    Vector3 velocity;
+    bool isGrounded;
 
     
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+ 
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+
+
+        if (isGrounded && velocity.y < 0)
+
         {
-            transform.Translate(0, 0, playerspeed * Time.deltaTime, Space.Self);
+            velocity.y = -2f;
+
         }
 
-        if (Input.GetKey(KeyCode.S))
+
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+
+
+        Vector3 move = transform.right * x + transform.forward * z;
+        controller.Move(move * speed * Time.deltaTime);
+
+
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+
         {
-            transform.Translate(0, 0, -playerspeed * Time.deltaTime, Space.Self);
+            velocity.y = Mathf.Sqrt(jump * -2f * gravity);
+
         }
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(-playerspeed * Time.deltaTime, 0, 0, Space.Self);
-        }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(playerspeed * Time.deltaTime, 0, 0, Space.Self);
-        }
+
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+
+
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(-Vector3.up * 80 * Time.deltaTime);
+            transform.Rotate(-Vector3.up * 150 * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.up * 80 * Time.deltaTime);
+            transform.Rotate(Vector3.up * 150 * Time.deltaTime);
         }
+
+
+
     }
 
 }

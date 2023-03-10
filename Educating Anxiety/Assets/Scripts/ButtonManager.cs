@@ -17,6 +17,9 @@ public class ButtonManager : MonoBehaviour
     public GameObject iKey;
     public GameObject qKey;
     public GameObject pKey;
+    public GameObject breathing;
+    public GameObject anxietyBeam;
+    public GameObject anxietyParticles;
 
     //gif variables
     public GameObject squareBreathingGif;
@@ -42,6 +45,8 @@ public class ButtonManager : MonoBehaviour
         animationSpeed = squareAnim.speed;
         squareAnim.speed = 0;
         coroutineCount = 0;
+        AudioSource breathing = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -93,11 +98,21 @@ public class ButtonManager : MonoBehaviour
         QandPkeys();
         RequirementsForGrounding();
 
+        if (cyclesComplete == 1)
+        {
+            anxietyParticles.SetActive(false);
+        }
+
+        if (cyclesComplete == 2)
+        {
+            anxietyBeam.SetActive(false);
+        }
 
         if (cyclesComplete == 3)
         {
             SceneManager.LoadScene("End Screen");
         }
+
 
     }
 
@@ -238,43 +253,53 @@ public class ButtonManager : MonoBehaviour
         //first phase
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 0))
         {
+            breathing.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
+            
         }
 
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 1))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(ContinueGrounding());
+            
         }
 
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 2))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(ContinueGrounding());
         }
 
         //middle phase
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == true) && (isPPressed == true) && (coroutineCount == 3))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(MiddleOfGrounding());
         }
 
         //release phase
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 4))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(ContinueGrounding());
         }
 
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 5))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(ContinueGrounding());
         }
 
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 6))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(ContinueGrounding());
         }
 
         if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 7))
         {
+            breathing.GetComponent<AudioSource>().UnPause();
             StartCoroutine(EndOfGrounding());
         }
 
@@ -342,7 +367,8 @@ public class ButtonManager : MonoBehaviour
 
         }
 
-     
+        breathing.GetComponent<AudioSource>().Pause();
+
     }
 
     IEnumerator MiddleOfGrounding()
@@ -357,7 +383,8 @@ public class ButtonManager : MonoBehaviour
         //disable q and p
         qKey.SetActive(false);
         pKey.SetActive(false);
-        
+
+        breathing.GetComponent<AudioSource>().Pause();
 
     }
 
