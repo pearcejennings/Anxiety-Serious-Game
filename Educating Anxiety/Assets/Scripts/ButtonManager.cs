@@ -98,6 +98,12 @@ public class ButtonManager : MonoBehaviour
         QandPkeys();
         RequirementsForGrounding();
 
+        //reset breathing on audio on failure to ground
+        if (coroutineCount == 0)
+        {
+            breathing.GetComponent<AudioSource>().Stop();
+        }
+
         if (cyclesComplete == 1)
         {
             anxietyParticles.SetActive(false);
@@ -321,7 +327,7 @@ public class ButtonManager : MonoBehaviour
 
 
         //disable space
-        if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4) && (squareAnim.speed == 0))
         {
             spaceBar.SetActive(false);
             
@@ -335,7 +341,7 @@ public class ButtonManager : MonoBehaviour
 
         }
         //re-disable keys f and j
-        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4) && (squareAnim.speed == 0))
         {
             fKey.SetActive(false);
             jKey.SetActive(false);
@@ -343,7 +349,7 @@ public class ButtonManager : MonoBehaviour
 
 
         //enable next keys e and i
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (coroutineCount < 4))
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (coroutineCount < 4) && (squareAnim.speed == 0))
         {
 
             eKey.SetActive(true);
@@ -351,7 +357,7 @@ public class ButtonManager : MonoBehaviour
 
         }
         //re-disable keys e and i
-        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4))
+        else if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4) && (squareAnim.speed == 0))
         {
             eKey.SetActive(false);
             iKey.SetActive(false);
@@ -359,7 +365,7 @@ public class ButtonManager : MonoBehaviour
 
 
         //enable next keys q and p
-        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (coroutineCount < 4))
+        if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (coroutineCount < 4) && (squareAnim.speed == 0))
         {
 
             qKey.SetActive(true);
