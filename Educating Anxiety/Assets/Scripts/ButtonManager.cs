@@ -17,9 +17,18 @@ public class ButtonManager : MonoBehaviour
     public GameObject iKey;
     public GameObject qKey;
     public GameObject pKey;
-    public GameObject breathing;
     public GameObject anxietyBeam;
     public GameObject anxietyParticles;
+
+    //WebGL build has very strange bug regarding pausing/unpausing audio, so having to split up breathing into individual sources and start/stop instead as temporary fix 
+    public GameObject breathin1;
+    public GameObject breathin2;
+    public GameObject breathin3;
+    public GameObject breathin4;
+    public GameObject breathout1;
+    public GameObject breathout2;
+    public GameObject breathout3;
+    public GameObject breathout4;
 
     //gif variables
     public GameObject squareBreathingGif;
@@ -45,7 +54,7 @@ public class ButtonManager : MonoBehaviour
         animationSpeed = squareAnim.speed;
         squareAnim.speed = 0;
         coroutineCount = 0;
-        AudioSource breathing = GetComponent<AudioSource>();
+        //AudioSource breathing = GetComponent<AudioSource>();
         
     }
 
@@ -95,22 +104,23 @@ public class ButtonManager : MonoBehaviour
         QandPkeys();
         RequirementsForGrounding();
 
-        //reset breathing on audio on failure to ground
-        if (coroutineCount == 0)
-        {
-            breathing.GetComponent<AudioSource>().Stop();
-        }
+        ////reset breathing on audio on failure to ground
+        //if (coroutineCount == 0)
+        //{
+        //    breathing.GetComponent<AudioSource>().Stop();
+        //}
 
+        //reduce anxiety
         if (cyclesComplete == 1)
         {
             anxietyParticles.SetActive(false);
         }
-
+        //reduce anxiety
         if (cyclesComplete == 2)
         {
             anxietyBeam.SetActive(false);
         }
-
+        //complete cycles
         if (cyclesComplete == 3)
         {
             SceneManager.LoadScene("End Screen");
@@ -256,53 +266,53 @@ public class ButtonManager : MonoBehaviour
         //first phase
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 0))
         {
-            breathing.GetComponent<AudioSource>().Play();
+            breathin1.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
             
         }
 
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 1))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathin2.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
             
         }
 
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 2))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathin3.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
         }
 
         //middle phase
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == true) && (isPPressed == true) && (coroutineCount == 3))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathin4.GetComponent<AudioSource>().Play();
             StartCoroutine(MiddleOfGrounding());
         }
 
         //release phase
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == true) && (isIPressed == true) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 4))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathout1.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
         }
 
         if ((isSpacePressed == true) && (isFPressed == true) && (isJPressed == true) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 5))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathout2.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
         }
 
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 6))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathout3.GetComponent<AudioSource>().Play();
             StartCoroutine(ContinueGrounding());
         }
 
         if ((isSpacePressed == false) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount == 7))
         {
-            breathing.GetComponent<AudioSource>().UnPause();
+            breathout4.GetComponent<AudioSource>().Play();
             StartCoroutine(EndOfGrounding());
         }
 
@@ -312,7 +322,7 @@ public class ButtonManager : MonoBehaviour
 
     IEnumerator ContinueGrounding()
     {
-
+       
         //increase coroutine count for progression requirements
         coroutineCount++;
         //progress animation by 1 seconds
@@ -370,12 +380,13 @@ public class ButtonManager : MonoBehaviour
 
         }
 
-        breathing.GetComponent<AudioSource>().Pause();
+       
 
     }
 
     IEnumerator MiddleOfGrounding()
     {
+        
         //increase coroutine count for progression requirements
         coroutineCount++;
         //progress animation by 5 seconds
@@ -387,12 +398,13 @@ public class ButtonManager : MonoBehaviour
         qKey.SetActive(false);
         pKey.SetActive(false);
 
-        breathing.GetComponent<AudioSource>().Pause();
+      
 
     }
 
     IEnumerator EndOfGrounding()
     {
+        
         //increase coroutine count for progression requirements
         coroutineCount++;
         //progress animation by 5 seconds
