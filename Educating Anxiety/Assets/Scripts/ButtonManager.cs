@@ -52,10 +52,7 @@ public class ButtonManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(coroutineCount);
-        Debug.Log(cyclesComplete);
-        Debug.Log(keysReleased);
-
+       
         //to deselect buttons incase user clicks with mouse
         if (Input.GetMouseButtonUp(0))
         {

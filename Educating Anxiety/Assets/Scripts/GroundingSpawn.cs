@@ -8,7 +8,6 @@ public class GroundingSpawn : MonoBehaviour
 
     public GameObject groundingObject;
     public GameObject anxietytext1;
-    public GameObject anxietytext2;
     public GameObject player;
     public GameObject heartbeat;
     public GameObject breathing;
@@ -27,8 +26,8 @@ public class GroundingSpawn : MonoBehaviour
         thoughts_time1 = Time.timeSinceLevelLoad + 15.0f;
         thoughts_time2 = Time.timeSinceLevelLoad + 30.0f;
 
-        spawn_time = Time.timeSinceLevelLoad + 45.0f;
-        tip_timer = Time.timeSinceLevelLoad + 60.0f;
+        spawn_time = Time.timeSinceLevelLoad + 40.0f;
+        tip_timer = Time.timeSinceLevelLoad + 50.0f;
     }
 
     // Update is called once per frame
@@ -49,7 +48,7 @@ public class GroundingSpawn : MonoBehaviour
 
         if (Time.timeSinceLevelLoad > thoughts_time2)
         {
-            anxietytext2.SetActive(true);
+
             breathing.SetActive(true);
 
         }
