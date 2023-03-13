@@ -20,16 +20,6 @@ public class ButtonManager : MonoBehaviour
     public GameObject anxietyBeam;
     public GameObject anxietyParticles;
 
-    //WebGL build has very strange bug regarding pausing/unpausing audio, so having to split up breathing into individual sources and start/stop instead as temporary fix 
-    public GameObject breathin1;
-    public GameObject breathin2;
-    public GameObject breathin3;
-    public GameObject breathin4;
-    public GameObject breathout1;
-    public GameObject breathout2;
-    public GameObject breathout3;
-    public GameObject breathout4;
-
     //gif variables
     public GameObject squareBreathingGif;
     private Animator squareAnim;
@@ -46,6 +36,16 @@ public class ButtonManager : MonoBehaviour
     bool isQPressed = false;
     bool isPPressed = false;
     bool keysReleased = false;
+
+    //Long winded and ineffcient, but WebGL build has very strange bug regarding pausing/unpausing audio, so having to split up breathing into individual sources and start/stop instead as temporary fix.
+    public GameObject breathin1;
+    public GameObject breathin2;
+    public GameObject breathin3;
+    public GameObject breathin4;
+    public GameObject breathout1;
+    public GameObject breathout2;
+    public GameObject breathout3;
+    public GameObject breathout4;
 
     // Start is called before the first frame update
     void Start()
@@ -104,11 +104,6 @@ public class ButtonManager : MonoBehaviour
         QandPkeys();
         RequirementsForGrounding();
 
-        ////reset breathing on audio on failure to ground
-        //if (coroutineCount == 0)
-        //{
-        //    breathing.GetComponent<AudioSource>().Stop();
-        //}
 
         //reduce anxiety
         if (cyclesComplete == 1)
@@ -260,6 +255,7 @@ public class ButtonManager : MonoBehaviour
        
     }
 
+
     private void RequirementsForGrounding()
     {
        
@@ -322,7 +318,7 @@ public class ButtonManager : MonoBehaviour
 
     IEnumerator ContinueGrounding()
     {
-       
+
         //increase coroutine count for progression requirements
         coroutineCount++;
         //progress animation by 1 seconds
@@ -331,7 +327,6 @@ public class ButtonManager : MonoBehaviour
         //halt animation
         squareAnim.speed = 0;
  
-
 
         //disable space
         if ((isSpacePressed == true) && (isFPressed == false) && (isJPressed == false) && (isEPressed == false) && (isIPressed == false) && (isQPressed == false) && (isPPressed == false) && (coroutineCount > 4) && (squareAnim.speed == 0))
@@ -378,9 +373,7 @@ public class ButtonManager : MonoBehaviour
             qKey.SetActive(true);
             pKey.SetActive(true);
 
-        }
-
-       
+        } 
 
     }
 
@@ -398,7 +391,6 @@ public class ButtonManager : MonoBehaviour
         qKey.SetActive(false);
         pKey.SetActive(false);
 
-      
 
     }
 
